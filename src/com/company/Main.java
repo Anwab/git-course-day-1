@@ -7,10 +7,18 @@ public class Main {
         String Name= "Anna";
         int age = 15;
 
+        printName (Name);
         oneYearPasses (age);
 
+
          }
-        public static int oneYearPasses (int age){
+
+    private static void printName(String Name) {
+        System.out.println( "Your name is " + Name + ".");
+
+    }
+
+    public static int oneYearPasses (int age){
             System.out.println( "Anna turned " + (age+1)+ " years old.");
             return age+1;
 
