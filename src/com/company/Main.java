@@ -7,13 +7,28 @@ public class Main {
         String Name= "Anna";
         int age = 15;
 
-        oneYearPasses (age);
+
+
+        if (age>50){
+        tenYearPasses (age);
 
          }
-        public static int oneYearPasses (int age){
+
+        else{ oneYearPasses (age);
+    }
+    }
+
+    private static int tenYearPasses(int age) {
+        System.out.println( "Anna turned " + (age+10)+ " years old.");
+        return age+10;
+
+    }
+
+    public static int oneYearPasses (int age){
             System.out.println( "Anna turned " + (age+1)+ " years old.");
             return age+1;
 
 	// write your code here
         }
-        }
+
+    }
